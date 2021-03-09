@@ -1,30 +1,39 @@
-import React from 'react';
-import NavItems from './NavElem'
+import React, {   useState  } from 'react';
+import NavItems from './NavData'
 import '../../styles/Navbar.css'
-
 
 
 const Items = function(){ 
     return(
-    NavItems.map((items,index) => {
-                return(
-                    <li key={index}>
-                        <a className="navItem" href={items.url}>
-                            <img src={items.img} alt={items.title} />
-                            {items.title}
-                        </a>
-                    </li>
-                )
-                } ) 
+    NavItems.map((items,index) => 
+    {
+        return(
+            <li key={index}>
+            <a className="navItem" href={items.url}>
+                <i className="navIcon" src={items.img } alt={items.title} />
+                {items.title}
+            </a>
+            </li>
+        )
+    }) 
     )
-            }
+}
+
 
 const Navbar = () => {
+    const [clicked, setclicked] = useState(false)
+
+    const handleClickMobile = () =>{setclicked(!clicked)}         
+
     return (
         <nav className="NavbarItems">
             <h1 className="navbarTitle"> ANTOINE MARIONNEAU</h1>
-            <div className="navbarMenu">
-            <ul> 
+            <div className="mobileMenu" onClick={handleClickMobile}>
+                <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+            </div>
+
+            <div className="navbarMenu" >
+            <ul className={clicked ? 'navListMobile ' : 'navListWeb'}> 
                 <Items/>
             </ul>
             </div>
