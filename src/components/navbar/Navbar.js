@@ -9,8 +9,8 @@ const Items = function(){
     {
         return(
             <li key={index}>
-            <a className="navItem" href={items.url}>
-                <i className="navIcon" src={items.img } alt={items.title} />
+            <a className="navItem nav-links" href={items.url}>
+                <i className={items.icon}></i>
                 {items.title}
             </a>
             </li>

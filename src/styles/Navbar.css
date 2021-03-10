@@ -1,5 +1,7 @@
 .NavbarItems {
-  background: linear-gradient(90deg, rgb(182, 159, 56) 0%, rgb(26, 22, 8));
+  /*background: linear-gradient(90deg, rgb(56, 132, 182) 0%, rgb(53, 55, 167));*/
+  background: linear-gradient(90deg, #001f3f 0%, #073d72);
+  /*background: linear-gradient(90deg, rgb(88, 108, 121) 0%, rgb(17, 60, 88));*/
   height: 80px;
   display: flex;
   justify-content: center;
@@ -9,9 +11,34 @@
 .navbarTitle {
   color: #fff;
   justify-self: start;
+  margin-right: 200px;
   margin-left: 20px;
 }
+.fa-bars {
+  color: #fff;
+}
+.navItem {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.NavbarItems li {
+  padding: 5px;
+  transition: transform 0.5s ease;
+}
+.NavbarItems li:hover {
+  border-radius: 0%;
+  transform: scale(1.2);
+  color: #fff;
+  background-color: #f5cd84bb;
+  transition: all 0.2s ease-out;
+}
+
+.NavbarItems a:hover {
+  color: #fff;
+}
 .navIcon {
+  margin-top: 10px;
   width: 50px;
   height: 50px;
 }
@@ -20,4 +47,70 @@
   grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
+  justify-content: end;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.fas {
+  margin-right: 15px;
+  margin-top: 5px;
+  font-size: 25px;
+}
+.mobileMenu {
+  display: none;
+}
+
+/* ------ Mobile CSS  ------------ */
+
+@media screen and (max-width: 960px) {
+  .navListWeb {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .navListMobile {
+    padding: 0px;
+    height: 500px;
+    opacity: 1;
+    list-style: none;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+  }
+  .navListMobile.active {
+    background-color: burlywood;
+    left: 0;
+    opacity: 1;
+    transition: 0.5s ease;
+    z-index: 1;
+  }
+  .navItem {
+    text-align: center;
+    padding: 10px;
+    display: table;
+    width: 100%;
+  }
+  .navbarTitle {
+    color: #fff;
+    text-align: center;
+    justify-self: center;
+    margin: 25px;
+  }
+  .NavbarItems {
+    height: 120px;
+    position: relative;
+  }
+  .navIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 15px;
+    cursor: pointer;
+  }
 }
