@@ -1,7 +1,5 @@
 .NavbarItems {
-  /*background: linear-gradient(90deg, rgb(56, 132, 182) 0%, rgb(53, 55, 167));*/
   background: linear-gradient(90deg, #001f3f 0%, #073d72);
-  /*background: linear-gradient(90deg, rgb(88, 108, 121) 0%, rgb(17, 60, 88));*/
   height: 80px;
   display: flex;
   justify-content: center;
@@ -11,7 +9,7 @@
 .navbarTitle {
   color: #fff;
   justify-self: start;
-  margin-right: 200px;
+  margin-right: 10%;
   margin-left: 20px;
 }
 .fa-bars {
@@ -23,6 +21,7 @@
   margin-right: 5px;
 }
 .NavbarItems li {
+  width: auto;
   padding: 5px;
   transition: transform 0.5s ease;
 }
@@ -50,7 +49,6 @@
   justify-content: end;
   font-size: 18px;
   margin-top: 10px;
-  margin-right: 20px;
 }
 .fas {
   margin-right: 15px;
@@ -61,20 +59,41 @@
   display: none;
 }
 
-/* ------ Mobile CSS  ------------ */
-
-@media screen and (max-width: 960px) {
+/* ------ Tablette CSS  ------------ */
+/*
+@media screen and (min-width: 520px) and (max-width: 760px) {
   .navListWeb {
     display: none;
   }
-
   .mobileMenu {
     display: block;
+    color: #fff;
+    margin-left: 33%;
+  }
+  .mobileMenuDeployed {
+    display: block;
+    color: #fff;
+  }
+  .NavbarItems li {
+    width: auto;
+    padding: 5px;
+    transition: none;
+  }
+  .NavbarItems li:hover {
+    border-radius: 0%;
+    transform: none;
+    color: #fff;
+    background-color: transparent;
+    transition: none;
+  }
+  .navbarMenu {
+    background-color: #073d72;
+    margin-top: 120%;
+    width: 40%;
   }
 
   .navListMobile {
     padding: 0px;
-    height: 500px;
     opacity: 1;
     list-style: none;
     font-size: 18px;
@@ -91,14 +110,96 @@
   .navItem {
     text-align: center;
     padding: 10px;
-    display: table;
+    padding-right: 50px;
+    display: block;
     width: 100%;
   }
   .navbarTitle {
     color: #fff;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 15px;
+  }
+  .NavbarItems {
+    height: 120px;
+    position: relative;
+  }
+  .navIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 15px;
+    cursor: pointer;
+  }
+}
+  */
+/* MOBILE CSS */
+
+@media screen and (max-width: 520px) {
+  .NavbarItems li {
+    width: auto;
+    padding: 5px;
+    transition: none;
+  }
+  .NavbarItems li:hover {
+    border-radius: 0%;
+    transform: none;
+    color: #fff;
+    background-color: #f5cd84bb;
+    transition: none;
+  }
+  .navListWeb {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+    color: #fff;
+    margin-left: 25%;
+    width: 50%;
+  }
+  .mobileMenuDeployed {
+    display: block;
+    color: #fff;
+    margin-right: -33%;
+  }
+  .navbarMenu {
+    background-color: #073d72;
+    margin-top: 120%;
+    width: 60%;
+  }
+
+  .navListMobile {
+    padding: 0px;
+    opacity: 1;
+    list-style: none;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+  }
+  .navListMobile.active {
+    background-color: burlywood;
+    left: 0;
+    opacity: 1;
+    transition: 0.5s ease;
+    z-index: 1;
+  }
+  .navItem {
     text-align: center;
-    justify-self: center;
-    margin: 25px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+  }
+  .navbarTitle {
+    color: #fff;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 15px;
   }
   .NavbarItems {
     height: 120px;

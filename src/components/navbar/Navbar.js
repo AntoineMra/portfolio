@@ -28,7 +28,7 @@ const Navbar = () => {
     return (
         <nav className="NavbarItems">
             <h1 className="navbarTitle"> ANTOINE MARIONNEAU</h1>
-            <div className="mobileMenu" onClick={handleClickMobile}>
+            <div className={clicked ? 'mobileMenuDeployed' : 'mobileMenu'} onClick={handleClickMobile}>
                 <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
             </div>
 
