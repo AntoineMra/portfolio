@@ -1,6 +1,6 @@
 import React, {   useState  } from 'react';
 import NavItems from './NavData'
-import '../../styles/Navbar.css'
+import '../../styles/Navbar/Navbar.css'
 
 
 const Items = function(){ 

@@ -29,7 +29,7 @@
   border-radius: 0%;
   transform: scale(1.2);
   color: #fff;
-  background-color: #f5cd84bb;
+  /*background-color: #f5cd84bb; */
   transition: all 0.2s ease-out;
 }
 

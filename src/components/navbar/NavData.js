@@ -8,7 +8,7 @@ const menuItem = [
     },
     {
         id: 2,
-        title: 'Compétence',
+        title: 'Compétences',
         icon: 'fas fa-award',
         url: '#'
     
