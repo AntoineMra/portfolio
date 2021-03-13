@@ -6,9 +6,20 @@
   margin-left: 25%;
   margin-top: 10%;
   border-radius: 50%;
+  box-shadow: 0 0 0 4px #073c7257;
   align-items: center;
 }
+.profileContainer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+}
 .nameTitle {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 .jobTitle {

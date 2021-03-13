@@ -1,3 +1,21 @@
 * {
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  min-height: 95vh !important;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+a:visited {
+  color: #333;
 }

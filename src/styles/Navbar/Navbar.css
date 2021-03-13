@@ -1,24 +1,27 @@
 .NavbarItems {
   background: linear-gradient(90deg, #001f3f 0%, #073d72);
-  height: 80px;
   display: flex;
+  height: auto;
   justify-content: center;
   align-items: center;
   font-size: 15px;
 }
 .navbarTitle {
-  color: #fff;
+  color: #ddd;
   justify-self: start;
   margin-right: 10%;
   margin-left: 20px;
 }
 .fa-bars {
-  color: #fff;
+  color: #ddd;
 }
 .navItem {
-  color: #fff;
-  text-decoration: none;
+  color: #ddd;
+  text-decoration: none !important;
   margin-right: 5px;
+}
+a:hover {
+  text-decoration: none !important;
 }
 .NavbarItems li {
   width: auto;
@@ -28,15 +31,13 @@
 .NavbarItems li:hover {
   border-radius: 0%;
   transform: scale(1.2);
-  color: #fff;
+  color: #ddd;
   /*background-color: #f5cd84bb; */
   transition: all 0.2s ease-out;
 }
 
-.NavbarItems a:hover {
-  color: #fff;
-}
 .navIcon {
+  color: floralwhite;
   margin-top: 10px;
   width: 50px;
   height: 50px;
@@ -51,9 +52,15 @@
   margin-top: 10px;
 }
 .fas {
+  color: floralwhite;
   margin-right: 15px;
   margin-top: 5px;
   font-size: 25px;
+}
+.navActive {
+  border: solid #ddd;
+  border-width: 0;
+  border-bottom-width: 2px;
 }
 .mobileMenu {
   display: none;
@@ -67,12 +74,12 @@
   }
   .mobileMenu {
     display: block;
-    color: #fff;
+    color: #ddd;
     margin-left: 33%;
   }
   .mobileMenuDeployed {
     display: block;
-    color: #fff;
+    color: #ddd;
   }
   .NavbarItems li {
     width: auto;
@@ -82,7 +89,7 @@
   .NavbarItems li:hover {
     border-radius: 0%;
     transform: none;
-    color: #fff;
+    color: #ddd;
     background-color: transparent;
     transition: none;
   }
@@ -115,7 +122,7 @@
     width: 100%;
   }
   .navbarTitle {
-    color: #fff;
+    color: #ddd;
     text-align: left;
     font-size: 25px;
     margin-top: 10px;
@@ -145,25 +152,18 @@
     padding: 5px;
     transition: none;
   }
-  .NavbarItems li:hover {
-    border-radius: 0%;
-    transform: none;
-    color: #fff;
-    background-color: #f5cd84bb;
-    transition: none;
-  }
   .navListWeb {
     display: none;
   }
   .mobileMenu {
     display: block;
-    color: #fff;
+    color: #ddd;
     margin-left: 25%;
     width: 50%;
   }
   .mobileMenuDeployed {
     display: block;
-    color: #fff;
+    color: #ddd;
     margin-right: -33%;
   }
   .navbarMenu {
@@ -194,7 +194,7 @@
     width: 100%;
   }
   .navbarTitle {
-    color: #fff;
+    color: #ddd;
     text-align: left;
     font-size: 25px;
     margin-top: 10px;

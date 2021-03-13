@@ -1,21 +1,23 @@
 import React, {   useState  } from 'react';
 import NavItems from './NavData'
+import { NavLink } from "react-router-dom";
 import '../../styles/Navbar/Navbar.css'
 
 
 const Items = function(){ 
     return(
-    NavItems.map((items,index) => 
-    {
-        return(
-            <li key={index}>
-            <a className="navItem nav-links" href={items.url}>
-                <i className={items.icon}></i>
-                {items.title}
-            </a>
-            </li>
-        )
-    }) 
+        NavItems.map((items,index) => 
+            {
+                return(
+                    <NavLink exact to={items.url}  activeClassName="navActive">
+                        <li key={index}>
+                            <i className={items.icon}></i>
+                            <span className="navItem nav-links">{items.title}</span>
+                        </li>
+                    </NavLink>
+                )
+            }
+        ) 
     )
 }
 
@@ -27,7 +29,7 @@ const Navbar = () => {
 
     return (
         <nav className="NavbarItems">
-            <h1 className="navbarTitle"> ANTOINE MARIONNEAU</h1>
+            <NavLink exact to="/"><h1 className="navbarTitle"> ANTOINE MARIONNEAU</h1></NavLink>
             <div className={clicked ? 'mobileMenuDeployed' : 'mobileMenu'} onClick={handleClickMobile}>
                 <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
             </div>
