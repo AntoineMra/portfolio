@@ -1,69 +1,88 @@
 .HomePage {
-  height: 90vh;
-  background: #e0d9d9;
+  color: #ddd;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.HomePage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('../../media/back.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(30%);
+}
+.HomeDesc {
+  max-height: 100vh;
+}
+
 .profilePhoto {
-  margin-right: 25%;
-  margin-left: 25%;
   margin-top: 10%;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px #073c7257;
+  height: 408px;
+  width: 306px;
+  box-shadow: 0 0 0 4px #073c72;
   align-items: center;
 }
 
+.cvFile {
+  width: 20%;
+  margin: 10% 40%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #073c72;
+  border: solid;
+  border-color: #073c72;
+}
+
+.cvFile:hover {
+  background-color: #073c72;
+  color: #ddd;
+  border: solid;
+  border-color: #ddd;
+}
+
 .nameTitle {
-  margin: 10%;
-  line-height: 1.2em;
-  font-weight: 800;
-  font-size: 2.3rem;
+  font-weight: 500;
+  font-size: 4.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
   text-align: center;
 }
 .jobTitle {
-  margin: 15%;
+  margin: 5%;
   text-align: center;
 }
 .descTitle {
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  animation: aniText 2.5s ease-out;
 }
-
-.bounce {
-  animation-name: bounce;
-  animation-duration: 2.1s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
+.descTexte {
+  font-size: 16px;
+  animation: aniText 3.5s ease-out;
 }
-@keyframes bounce {
-  25% {
-    transform-origin: right;
-    animation-mode: forwards;
-    transform: rotateY(-180deg);
+@keyframes aniText {
+  0% {
+    opacity: 0;
   }
-  25.001% {
-    transform-origin: bottom;
-    transform: translateX(200px);
+  25% {
+    opacity: 0.25;
   }
   50% {
-    transform-origin: bottom;
-    transform: translateX(200px) rotateX(-180deg);
-  }
-  50.001% {
-    transform-origin: left;
-    transform: translateX(200px) translateY(200px);
+    opacity: 0.5;
   }
   75% {
-    transform-origin: left;
-    transform-origin: left;
-    transform: translateX(200px) translateY(200px) rotateY(180deg);
-  }
-  75.001% {
-    transform-origin: top;
-    transform: translateY(200px);
+    opacity: 0.75;
   }
   100% {
-    transform-origin: top;
-    transform-origin: top;
-    transform: translateY(200px) rotateX(180deg);
+    opacity: 1;
   }
 }

@@ -8,19 +8,22 @@ const HomeDesc = () => {
                 <Row>
                     <Col xs={{span: 7 , offset: 1}}>
                         <h5 className="descTitle"> Qui je suis </h5>
-                        <p className="descript">
-                            Bonjour, j'ai commencé le développement et j'ai entamé un parcours professionnel pour atteindre mon objectif : me spécialiser dans le Web. 
+                        <p className="descTexte">
+                            Bonjour, j'ai commencé le développement il y a maintenant 2 ans et j'ai entamé un parcours professionnel pour atteindre mon objectif :<b style={{color: '#073c72'}}> me spécialiser dans le Web</b>. 
                             <br/><br/>
-                            Je me suis tourné vers les études d'informatiques et particulièrement le développement en 2019. Je n'ai pas eu besoin de beaucoup de temps pour comprendre que je pourrai faire de cette passion mon métier. 
+                            Je me suis tourné vers les études d'informatique et particulièrement le développement en 2019. Je n'ai pas eu besoin de beaucoup de temps pour comprendre que je pourrais faire de cette passion <b style={{color: '#073c72'}}>mon métier</b>. 
                             <br/><br/>
-                            Je suis maintenant étudiant depuis 2 ans en BTS SIO option SLAM. De plus, j'affectionne particulièrement découvrir de moi-même d'autre technologies pour compléter mes compétences. 
+                            Je suis maintenant étudiant en BTS SIO option SLAM. De plus, j'affectionne particulièrement découvrir de moi-même d'autres technologies pour compléter <br/> <b style={{color: '#073c72'}}> mes compétences</b> . 
                             <br/><br/>
-                            Je suis également à la recherche d'une alternance dans le développement web pour la suite de mon parcours alors n'hésitez pas à me contacter.
+                            Je suis également à la recherche d'une alternance dans le développement web pour la suite de mon parcours alors<b style={{color: '#073c72'}}> n'hésitez pas à me contacter</b>.
                         </p>
                     </Col>
                     <Col xs={{span:3 , offset: 1}}>
-                        <img src="./media/pdp.png" alt="aa" className="profilePhoto"/>
+                        <img src="./media/pdp.jpg" alt="Profil Face" className="profilePhoto"/>
                     </Col>
+                </Row>
+                <Row>
+                    <a href="./media/CV_Antoine_Marionneau.pdf" target="_blank" className="cvFile">Télécharger mon CV</a>
                 </Row>
             </Container>
         </section>
