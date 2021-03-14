@@ -1,4 +1,10 @@
 .NavbarItems {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1000;
   background: linear-gradient(90deg, #001f3f 0%, #073d72);
   display: flex;
   height: auto;
@@ -7,10 +13,13 @@
   font-size: 15px;
 }
 .navbarTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
   color: #ddd;
-  justify-self: start;
-  margin-right: 10%;
-  margin-left: 20px;
+  margin-top: 15px;
 }
 .fa-bars {
   color: #ddd;

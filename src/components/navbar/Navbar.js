@@ -2,6 +2,8 @@ import React, {   useState  } from 'react';
 import NavItems from './NavData'
 import { NavLink } from "react-router-dom";
 import '../../styles/Navbar/Navbar.css'
+import { Col, Container, Row } from 'react-bootstrap';
+
 
 
 const Items = function(){ 
@@ -29,17 +31,24 @@ const Navbar = () => {
 
     return (
         <nav className="NavbarItems">
-            <NavLink exact to="/"><h1 className="navbarTitle"> ANTOINE MARIONNEAU</h1></NavLink>
-            <div className={clicked ? 'mobileMenuDeployed' : 'mobileMenu'} onClick={handleClickMobile}>
-                <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-            </div>
-
-            <div className="navbarMenu" >
-            <ul className={clicked ? 'navListMobile ' : 'navListWeb'}> 
-                <Items/>
-            </ul>
-            </div>
-
+            <Container>
+                <Row>
+                    <Col xs={5}>
+                    <NavLink exact to="/"><h1 className="navbarTitle"> ANTOINE MARIONNEAU</h1></NavLink>
+                    
+                    </Col>
+                    <Col xs={{span:6 , offset: 1}}>
+                        <div className={clicked ? 'mobileMenuDeployed' : 'mobileMenu'} onClick={handleClickMobile}>
+                            <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                        </div>
+                        <div className="navbarMenu" >
+                            <ul className={clicked ? 'navListMobile ' : 'navListWeb'}> 
+                                <Items/>
+                            </ul>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </nav>
     );
 };

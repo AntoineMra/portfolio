@@ -1,4 +1,5 @@
 .HomePage {
+  height: 90vh;
   background: #e0d9d9;
 }
 .profilePhoto {
@@ -9,20 +10,18 @@
   box-shadow: 0 0 0 4px #073c7257;
   align-items: center;
 }
-.profileContainer {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
-}
+
 .nameTitle {
+  margin: 10%;
+  line-height: 1.2em;
+  font-weight: 800;
   font-size: 2.3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  margin-top: 1.5rem;
   text-align: center;
 }
 .jobTitle {
+  margin: 15%;
   text-align: center;
 }
 .descTitle {
