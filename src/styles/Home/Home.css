@@ -86,3 +86,40 @@
     opacity: 1;
   }
 }
+
+/* --------------- PAGE RESUME ----------------*/
+
+
+.HomeResume {
+  min-height: 95vh;
+  width: 100%;
+}
+.expContainer{
+ display: grid;
+ align-items: center;
+ justify-content: center;
+}
+.formationContainer{
+ display: grid;
+ align-items: center;
+ justify-content: center;
+}
+
+.formaTitle{
+  display: inherit;
+}
+.formaDate{
+  display: inherit;
+}
+.formaDesc{
+  display: inherit;
+}
+.expTitle{
+  display: inherit;
+}
+.expDate{
+  display: inherit;
+}
+.expDesc{
+  display: inherit;
+}
