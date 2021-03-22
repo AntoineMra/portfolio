@@ -10,6 +10,7 @@ import Projets from './pages/Projets'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+import Footer from './components/footer/Footer';
 
 // END
 
@@ -28,6 +29,7 @@ const App = () => {
           <Route component={NotFound}/>
         </Switch>
       </BrowserRouter>
+      <Footer/>
     </>
   );
 };

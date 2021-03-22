@@ -4,9 +4,11 @@ import { Row } from "react-bootstrap";
 const formaData = [
     {
         id: 1,
-        title: 'BTS - Service Informatique aux Organisations',
+        title: 'BTS SIO - Option SLAM',
         date: "De Septembre 2019 à Aujourd'hui",
-        desc: "​Je suis en cours de formation en BTS SIO option Solutions Logicielles et Applications métiers au lycée Savary de Mauléon, les Sables d'Olonnes."
+        desc: `​Je suis en cours de formation en BTS SIO option Solutions Logicielles et Applications métiers. J'ai pu assimiler plusieurs notions clés 
+        comme l'apprentissage de la Programmation Orienté Objet , une initiation au développement d'applications client Lourd ou Mobile
+        et enfin le développement Web avec le framework Symfony`
     },
     {
         id: 2,

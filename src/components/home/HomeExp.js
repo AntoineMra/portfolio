@@ -12,7 +12,7 @@ const expData = [
         id: 2,
         title: 'MERCEDES-SAGA',
         date: 'De Juillet 2019 à Août 2019',
-        desc: "Manutentionnaire dans le cadre d'un déménagement d’entrepôt chez Mercedes SAGA"
+        desc: "Manutentionnaire dans le cadre d'un déménagement d’entrepôt chez Mercedes SAGA. J'ai pu y développé une autonomie dans mon travail et un savoir-être en entreprise "
     },
 ]
 

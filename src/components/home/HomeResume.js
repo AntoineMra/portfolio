@@ -9,13 +9,13 @@ const HomeResume = () => {
             <Container>
                 <Row>
                     <Col className="formationContainer">
-                        <h1 style={{textTransform: 'uppercase'}}>
+                        <h1 className="formaHeading">
                             formation
                         </h1>
                         <HomeForma/>
                     </Col>
                     <Col className="expContainer">
-                        <h1 style={{textTransform: 'uppercase'}}>
+                        <h1 className="expHeading">
                             expérience
                         </h1>
                         <HomeExp/>
