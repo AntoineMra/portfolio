@@ -8,7 +8,7 @@ const Cards = function() {
             {
                return(
                 <div key={index}>
-                    <Card style={{ width: '18rem' }}>
+                    <Card>
                         <Card.Body>
                             <Card.Title>{items.title}</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>

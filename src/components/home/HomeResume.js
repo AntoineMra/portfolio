@@ -21,6 +21,11 @@ const HomeResume = () => {
                         <HomeExp/>
                     </Col>
                 </Row>
+                <Row>
+                    <Col>
+                    <img src="./media/codeImg.svg" alt="snippetsImg" className="resumeImg"/>
+                    </Col>
+                </Row>
             </Container>
         </section>
     );

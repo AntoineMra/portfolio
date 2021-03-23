@@ -96,7 +96,7 @@
   padding-top: 5%;
   min-height: 95vh;
   width: 100%;
-  background-color: rgba(51, 51, 51, 0.9);
+  background-color: rgb(20, 19, 19);
   color: #ddd;
 }
 
@@ -150,4 +150,8 @@
 .expDesc {
   height: 10vh;
   margin-top: -10%;
+}
+.resumeImg {
+  width: 50%;
+  margin-left: 25%;
 }
