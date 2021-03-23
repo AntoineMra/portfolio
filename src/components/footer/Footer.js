@@ -13,12 +13,12 @@ const Footer = () => {
                     <Col>
                     <ul class="footerIcons">
                         <li class="socialIcons">
-                            <a href="https://github.com/AntoineMra" style={{color: '#ddd'}}>
+                            <a href="https://github.com/AntoineMra" target="_blank" rel="noreferrer" style={{color: '#ddd'}}>
                                 <i class="fab fa-github fa-2x"></i>
                             </a>
                         </li>
                         <li class="socialIcons">
-                            <a href="https://www.linkedin.com/in/antoine-marionneau/" style={{color: '#ddd'}}>
+                            <a href="https://www.linkedin.com/in/antoine-marionneau/" target="_blank" rel="noreferrer" style={{color: '#ddd'}}>
                                 <i class="fab fa-linkedin-in fa-2x">
                                 </i>
                             </a>

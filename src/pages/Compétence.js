@@ -1,11 +1,12 @@
 import React from 'react';
+import '../styles/Compétence/Compétence.css'
 
 const Compétence = () => {
     return (
-        <div>
+        <section className="compPage">
             <h1>Compétences
             </h1>
-        </div>
+        </section>
     );
 };
 
