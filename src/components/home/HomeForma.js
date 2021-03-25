@@ -27,7 +27,7 @@ const HomeForma = () => {
         formaData.map((forma,index) => 
             {
                 return(
-                    <Row className="formaContainer" key={index}>
+                    <Row className="formaContainer" key={forma.id}>
                         <h3 className="formaTitle">{forma.title}</h3>
                         <i className="formaDate">{forma.date}</i>
                         <p className="formaDesc">{forma.descMain}</p>

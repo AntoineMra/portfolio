@@ -26,7 +26,7 @@ const HomeExp = () => {
         expData.map((exp,index) => 
             {
                 return(
-                    <Row className="expContainer" key={index}>
+                    <Row className="expContainer" key={exp.id}>
                         <h3 className="expTitle">{exp.title}</h3>
                         <i className="expDate">{exp.date}</i>
                         <p className="expDesc">{exp.descMain}</p>
