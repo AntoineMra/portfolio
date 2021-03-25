@@ -1,10 +1,12 @@
 import React from 'react';
+import '../styles/Projets/Projets.css'
+
 
 const Projets = () => {
     return (
-        <div>
-            <h1>Les Projets</h1>
-        </div>
+        <section className="projetPage">
+            <h1 className="projetTitle">Les Projets</h1>
+        </section>
     );
 };
 

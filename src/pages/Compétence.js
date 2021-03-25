@@ -4,7 +4,7 @@ import '../styles/Compétence/Compétence.css'
 const Compétence = () => {
     return (
         <section className="compPage">
-            <h1>Compétences
+            <h1 className="compTitle">Compétences
             </h1>
         </section>
     );

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Filters = () => {
     return (
-        <div>
+        <section className="sectionRow">
             
-        </div>
+        </section>
     );
 };
 

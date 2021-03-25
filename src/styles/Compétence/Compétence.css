@@ -1,3 +1,22 @@
 .compPage {
   height: 100vh;
 }
+.compTitle {
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  animation: render 2s ease-in-out;
+}
+@keyframes render {
+  0% {
+  }
+  25% {
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+  }
+}

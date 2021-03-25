@@ -6,10 +6,12 @@ const formaData = [
         id: 1,
         title: 'BTS SIO - Option SLAM',
         date: "De Septembre 2019 à Aujourd'hui",
-        desc: `​Je suis en cours de formation en BTS SIO option Solutions Logicielles et Applications métiers. J'ai pu assimiler plusieurs notions clés 
-        comme l'apprentissage de la Programmation Orienté Objet , une initiation au développement d'applications client Lourd ou Mobile
-        et enfin le développement Web avec le framework Symfony`
+        descMain: `​Je suis en cours de formation en BTS SIO option Solutions Logicielles et Applications métiers. J'ai pu assimiler plusieurs notions clés :`,
+        desc1: "- Apprentissage de la Programmation Orienté Objet",
+        desc2: "- Développement Web avec le framework Symfony",
+        desc3: "- Initiation au développement d'applications client Lourd et Mobile",
     },
+    /*
     {
         id: 2,
         title: "Baccalauréat Scientifique",
@@ -17,6 +19,7 @@ const formaData = [
         desc: "J'ai obtenu mon Bac Scientifique avec Option ISN où j'ai pratiquer mes premières bases d'informatique."
     
     },
+    */
 ]
 
 const HomeForma = () => {
@@ -27,7 +30,13 @@ const HomeForma = () => {
                     <Row className="formaContainer" key={index}>
                         <h3 className="formaTitle">{forma.title}</h3>
                         <i className="formaDate">{forma.date}</i>
-                        <p className="formaDesc">{forma.desc}</p>
+                        <p className="formaDesc">{forma.descMain}</p>
+                        <ul>
+                            <li className="formaList">{forma.desc1}</li>
+                            <li className="formaList">{forma.desc2}</li>
+                            <li className="formaList">{forma.desc3}</li>
+                        </ul>
+
                     </Row>
                 )
             }

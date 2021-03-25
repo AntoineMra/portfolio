@@ -1,4 +1,7 @@
-.blogTitle {
+.projetPage {
+  height: 100vh;
+}
+.projetTitle {
   font-weight: 500;
   font-size: 3.5rem;
   text-transform: uppercase;
