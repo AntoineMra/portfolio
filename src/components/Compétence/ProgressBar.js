@@ -1,12 +1,20 @@
 import React from 'react';
+import '../../styles/Compétence/MainBox.css'
+
 
 function ProgressBar(props) {
-    console.log(props);
+    return(
+    props.array.map(lang => {
     return (
-        <div>
-            <h3>{props.title}</h3>
-        </div>
+        <>
+            <div className="progressRow" key={lang.id}>
+                <label>{lang.name}</label>
+                <div className="progressBar" data-label={lang.pct}></div>
+            </div>
+        </>
     );
+    })
+    )
 }
 
 export default ProgressBar;

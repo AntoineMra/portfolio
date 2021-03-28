@@ -1,5 +1,5 @@
 .compPage {
-  height: 100vh;
+  min-height: 100vh;
 }
 .compTitle {
   margin-top: 50px;
@@ -7,14 +7,22 @@
   font-size: 3.5rem;
   text-transform: uppercase;
   text-align: center;
-  animation: render 1s ease-in-out;
-  transform-origin: top center;
 }
-@keyframes render {
-  0% {
-    transform: translateY(-200px) rotate(0deg);
-  }
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
+.compSubTitle {
+  margin: 15px 0px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.mainBox {
+  padding: 15px;
+  background-color: #073c7233;
+  border-radius: 2%;
+  box-shadow: 3px black;
+}
+.SideImg {
+  height: 100vh;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

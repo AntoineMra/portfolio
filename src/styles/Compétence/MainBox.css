@@ -1,0 +1,11 @@
+.progressBar {
+  background-color: #dc7633;
+  width: max-content;
+  height: 3rem;
+  border-radius: 1.5rem;
+  z-index: 1;
+}
+.menuSubTitle {
+  text-transform: uppercase;
+  font-size: 2rem;
+}

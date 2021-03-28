@@ -1,17 +1,20 @@
 import React from 'react';
 import ProgressBar from './ProgressBar';
+import '../../styles/Compétence/MainBox.css'
+
 
 const langages = [
-    {id: 1 , name: 'JavaScript' , pct: ''},
-    {id: 2 , name: 'PHP' , pct: ''},
-    {id: 3 , name: 'HTML/CSS' , pct: ''},
+    {id: 1 , name: 'JavaScript' , pct: '80'},
+    {id: 2 , name: 'PHP' , pct: '75'},
+    {id: 3 , name: 'HTML/CSS' , pct: '85'},
+    {id: 4 , name: 'SQL' , pct: '60'},
     
 ]
 const framework = [
-    {id: 1 , name: 'React' , pct: ''},
-    {id: 2 , name: 'Symfony' , pct: ''},
-    {id: 3 , name: 'Bootstrap' , pct: ''},
-    {id: 4 , name: 'Ionic' , pct: ''},
+    {id: 1 , name: 'React' , pct: '70'},
+    {id: 2 , name: 'Symfony' , pct: '80'},
+    {id: 3 , name: 'Bootstrap' , pct: '70'},
+    {id: 4 , name: 'WordPress' , pct: '85'},
 ]
 
 
@@ -22,10 +25,10 @@ const MainBox = (props) => {
         array = framework
     }
     return (
-        <div>
+        <div className="mainBox">
+            <h2 className="menuSubTitle">{props.type}</h2>  
             <ProgressBar
             array={array}
-            title={props.type}
             />
         </div>
     );
