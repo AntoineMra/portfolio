@@ -9,7 +9,7 @@ function ProgressBar(props) {
         <>
             <div className="progressRow" key={lang.id}>
                 <label>{lang.name}</label>
-                <div className="progressBar" data-label={lang.pct}></div>
+                <div className="progressBar" style={{"--width": lang.pct}} data-label={lang.pct}></div>
             </div>
         </>
     );

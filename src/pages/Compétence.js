@@ -12,18 +12,15 @@ const Compétence = () => {
 
             <Container>
                 <Row>
-                    <Col xs={{ span: 5}}>
+                    <Col xs={{ span: 6}}>
                         <MainBox
                         type="langages"
                         />
                     </Col>
-                    <Col xs={{ span: 5}}>
+                    <Col xs={{ span: 6}}>
                         <MainBox
                         type="framework"
                         />
-                    </Col>
-                    <Col xs={{ span: 2}}>
-                        <img src="./media/codein.png" alt="percentageDashboard" className="SideImg"/>
                     </Col>
                 </Row>
             </Container>
