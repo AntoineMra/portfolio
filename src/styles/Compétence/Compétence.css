@@ -3,24 +3,16 @@
   background-color: #f4ede433;
 }
 .compTitle {
-  padding-top: 50px;
+  padding: 50px;
   font-weight: 500;
   font-size: 3.5rem;
   text-transform: uppercase;
   text-align: center;
 }
-.compSubTitle {
-  margin: 15px 0px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.mainBox {
+
+.Box {
   padding: 15px;
   background-color: #073c7233;
   border-radius: 2%;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
-}
-.SideImg {
-  height: auto;
-  width: inherit;
 }

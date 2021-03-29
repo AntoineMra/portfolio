@@ -1,0 +1,12 @@
+.far {
+  color: #dc7633;
+}
+.compRow {
+  margin-left: 25px;
+}
+.compItem {
+  margin-left: 15px;
+}
+.compRow > .fas {
+  color: #dc7633;
+}

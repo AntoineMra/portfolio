@@ -1,11 +1,39 @@
 import React from 'react';
+import CompBox from './compBox';
+import CentreBox from './centreBox';
 
-const secondaryBox = () => {
+
+const comp = [
+    {id: 1 , name: 'Versionning Git'},
+    {id: 2 , name: 'Méthodes agiles' },
+    {id: 3 , name: 'Anglais Courant'},
+    {id: 4 , name: 'UI/UX Design'},
+    
+]
+const centre = [
+    {id: 1 , name: 'Histoire' , class: 'fas fa-landmark'}, 
+    {id: 2 , name: 'Football Américain' , class: 'fas fa-football-ball'},
+    {id: 3 , name: 'Basketball' , class: 'fas fa-basketball-ball'},
+]
+
+const secondaryBox = (props) => {
+    var isComp = false
+    if (props.type === "autres compétences") {
+        var array = comp
+        isComp = true
+    }
+    else{
+        array = centre
+    }
     return (
-        <div>
-            
-        </div>
-    );
+        <>
+            <div className="Box">
+                <h2 className="menuSubTitle">{props.type}</h2>
+            {isComp ? ( <CompBox array={array} />) : ( <CentreBox array={array}/> )}
+            </div>
+                       
+        </>
+    )
 };
 
 export default secondaryBox;

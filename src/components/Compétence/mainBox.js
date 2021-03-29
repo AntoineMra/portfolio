@@ -11,7 +11,7 @@ const langages = [
     
 ]
 const framework = [
-    {id: 1 , name: 'React' , pct: '70'},
+    {id: 1 , name: 'React' , pct: '70'}, 
     {id: 2 , name: 'Symfony' , pct: '80'},
     {id: 3 , name: 'Bootstrap' , pct: '70'},
     {id: 4 , name: 'WordPress' , pct: '85'},
@@ -21,11 +21,12 @@ const framework = [
 const MainBox = (props) => {
     if (props.type === "langages") {
         var array = langages
-    } else {
+    }
+    else{
         array = framework
     }
     return (
-        <div className="mainBox">
+        <div className="Box">
             <h2 className="menuSubTitle">{props.type}</h2>  
             <ProgressBar
             array={array}

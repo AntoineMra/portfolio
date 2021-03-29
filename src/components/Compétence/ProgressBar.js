@@ -2,19 +2,21 @@ import React from 'react';
 import '../../styles/Compétence/MainBox.css'
 
 
-function ProgressBar(props) {
+function ProgressBar(props) { 
+
     return(
     props.array.map(lang => {
-    return (
-        <>
-            <div className="progressRow" key={lang.id}>
-                <label>{lang.name}</label>
-                <div className="progressBar" style={{"--width": lang.pct}} data-label={lang.pct}></div>
-            </div>
-        </>
-    );
+        return (           
+            <>
+                <div className="progressRow" key={lang.id}>
+                    <label className="itemLabel">{lang.name}</label>
+                    <div className="progressBar" style={{"--width": lang.pct}} data-label={lang.pct + '% '}></div>
+                </div>
+            </>
+        );
     })
     )
+           
 }
 
 export default ProgressBar;
