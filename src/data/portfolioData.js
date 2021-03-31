@@ -2,19 +2,28 @@ export const portfolioData = [
   {
     id: 1,
     name: 'SEM - Alternance',
-    languages: ['javascript','css'],
-    languagesIcons: ['fab fa-js','fab fa-css3-alt'],
+    languages: ['JavaScript','CSS','PHP'],
+    languagesIcons: ['fab fa-js','fab fa-css3-alt','fab fa-php'],
     source: 'https://apprentissage-lessablesdolonne.com/',
-    info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
+    info: "​Lors de mon stage dans l'agence Aïoli Digital, j'ai pu concevoir le partie Front-End d'un site de mise en relation entre apprentis et entreprises.",
     picture: './media/project1.PNG'
   },
   {
     id: 2,
-    name: 'Portfolio',
-    languages: ['javascript','react','css'],
-    languagesIcons: ['fab fa-js','fab fa-react'],
+    name: 'Portfolio Personnel',
+    languages: ['JavaScript','React','CSS'],
+    languagesIcons: ['fab fa-js','fab fa-react','fab fa-css3-alt'],
     source: 'https://github.com/AntoineMra/portfolio',
-    info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
+    info: 'Portfolio personnel crée.',
     picture: './media/project2.JPG'
+  },
+  {
+    id: 3,
+    name: 'Portfolio - Duret Hortense',
+    languages: ['WordPress','PHP','CSS'],
+    languagesIcons: ['fab fa-wordpress','fab fa-php','fab fa-css3-alt'],
+    source: 'https://github.com/AntoineMra/portfolioHortenseDuret',
+    info: 'Portfolio crée en collaboration avec une étudiante en communication. Solution WordPress adaptable pour faire évoluer les compétences et les réalisations.',
+    picture: './media/project3.JPG'
   },
 ]

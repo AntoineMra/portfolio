@@ -27,7 +27,8 @@ const MainBox = (props) => {
     }
     return (
         <div className="Box">
-            <h2 className="menuSubTitle">{props.type}</h2>  
+            <h2 className="menuSubTitle">{props.type}</h2>
+            <h5 className="boxDesc">{props.desc}</h5>  
             <ProgressBar
             array={array}
             />
