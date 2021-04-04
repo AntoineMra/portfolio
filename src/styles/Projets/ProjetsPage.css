@@ -1,0 +1,84 @@
+.projetPage {
+  min-height: 100vh;
+}
+.radioDisplay {
+  height: 5vh;
+  background-color: #073c7233;
+  border-radius: 25px;
+  display: grid;
+  grid-area: 1;
+  grid-template-rows: repeat(1);
+}
+.radioLang {
+  grid-area: 1;
+  margin: 10px 25%;
+}
+
+.radioLang > input {
+  visibility: hidden;
+  position: relative;
+}
+.radioLang > input:before {
+  content: '';
+  visibility: visible;
+  position: absolute;
+  top: -4px;
+  left: 10px;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.radioLang > input:after {
+  content: '';
+  visibility: visible;
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #dc7633;
+  transform: scale(0);
+  transform-origin: center;
+  border: 2px solid #333;
+}
+
+input:checked:after {
+  transform: scale(1.12) translate(-25%, -25%);
+  top: 3px;
+  left: 16px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.projetTitle {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  animation: render 1s ease-in-out;
+  transform-origin: top center;
+}
+.projetSubTitle {
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  animation: render 1.5s ease-in-out;
+  transform-origin: top center;
+}
+@keyframes render {
+  0% {
+    transform: translateY(-200px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 
 export default class ProjectItem extends Component {
@@ -18,36 +18,37 @@ export default class ProjectItem extends Component {
 
         return (
                 <div className="projects">
-                    <Row>
-                        <Col>
-                            <p>{info}</p>
-                            <legend>{languages}</legend>
-                            <i>{source}</i>
-                        </Col>
-                        <Col>
-                            <h3 className="projectName">{name}</h3>
-                            <img className="projectImg" onClick={this.handleInfo} src={picture} alt="projectPic"/>
-                            <span className="infos" onClick={this.handleInfo} >
-                                <i className="fas fa-plus-circle"></i>
-                            </span>
-                            <div className="icons">
-                                {languagesIcons.map(icon => <i key={icon} className={icon}></i>)}
-                            </div>
-                        </Col>
-                    </Row>
-                    
+                    <Container>
+                        <Row>
+                            <Col md={4}>
+                                <h1 className="projectName">{name}</h1>
+                                <div className="icons">
+                                    {languagesIcons.map(icon => <i key={icon} className={icon}></i>)}
+                                </div>    
+                                <span className="infos" onClick={this.handleInfo} >
+                                    <i className="fas fa-plus-circle"></i>
+                                </span>
+                            </Col>
+                            <Col md={8}>
+                                <img className="projectImg" onClick={this.handleInfo} src={picture} alt="projectPic"/>
+                            </Col>
+                        </Row>
+                        
 
-                    {
-                        this.state.showInfo && (
-                            <div className="showInfo">
-                                <div className="infoContent">
-                                    <div className="head">
-                                        <h2>{name}</h2>
+                        {
+                            this.state.showInfo && (
+                                <div className="showInfo">
+                                    <div className="infoContent">
+                                        <div className="head">
+                                            <h2>{source}</h2>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    }
+                            )
+                        }
+
+                    </Container>
+                    
                 </div>
            
         )
