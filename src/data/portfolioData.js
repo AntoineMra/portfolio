@@ -1,7 +1,8 @@
 export const portfolioData = [
   {
     id: 1,
-    name: 'SEM - Alternance',
+    name: 'SEM Alternance',
+    subTitle : "Réalisation de la partie Front-End d'une application de mise en relation entre alternants et entreprises.",
     languages: ['JavaScript','CSS','PHP'],
     languagesIcons: ['fab fa-js','fab fa-css3-alt','fab fa-php'],
     source: 'https://apprentissage-lessablesdolonne.com/',
@@ -11,6 +12,7 @@ export const portfolioData = [
   {
     id: 2,
     name: 'Portfolio Personnel',
+    subTitle : '',
     languages: ['JavaScript','React','CSS'],
     languagesIcons: ['fab fa-js','fab fa-react','fab fa-css3-alt'],
     source: 'https://github.com/AntoineMra/portfolio',
@@ -21,6 +23,7 @@ export const portfolioData = [
     id: 3,
     name: 'Portfolio - Duret Hortense',
     languages: ['WordPress','PHP','CSS'],
+    subTitle : '',
     languagesIcons: ['fab fa-wordpress','fab fa-php','fab fa-css3-alt'],
     source: 'https://github.com/AntoineMra/portfolioHortenseDuret',
     info: 'Portfolio crée en collaboration avec une étudiante en communication. Solution WordPress adaptable pour faire évoluer les compétences et les réalisations.',

@@ -14,7 +14,7 @@ export default class ProjectItem extends Component {
 
     render() {
         
-        let {name, languages, languagesIcons,source,info,picture} = this.props.item
+        let {name,subTitle, languages, languagesIcons,source,info,picture} = this.props.item
 
         return (
                 <div className="projects">
@@ -22,11 +22,12 @@ export default class ProjectItem extends Component {
                         <Row>
                             <Col md={4}>
                                 <h1 className="projectName">{name}</h1>
+                                <h4 className="projectSubTitle">{subTitle}</h4>
                                 <div className="icons">
-                                    {languagesIcons.map(icon => <i key={icon} className={icon}></i>)}
+                                    {languagesIcons.map(icon => <i key={icon} className={icon + " fa-2x"}></i>)}
                                 </div>    
-                                <span className="infos" onClick={this.handleInfo} >
-                                    <i className="fas fa-plus-circle"></i>
+                                <span className="moreInfos" onClick={this.handleInfo} >
+                                    <i className="fas fa-plus-circle "></i>
                                 </span>
                             </Col>
                             <Col md={8}>
