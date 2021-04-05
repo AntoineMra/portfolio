@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row , Button} from "react-bootstrap";
 
 
 export default class ProjectItem extends Component {
@@ -26,9 +26,7 @@ export default class ProjectItem extends Component {
                                 <div className="icons">
                                     {languagesIcons.map(icon => <i key={icon} className={icon + " fa-2x"}></i>)}
                                 </div>    
-                                <span className="moreInfos" onClick={this.handleInfo} >
-                                    <i className="fas fa-plus-circle "></i>
-                                </span>
+                                <Button variant="dark" onClick={this.handleInfo}>En savoir +</Button>
                             </Col>
                             <Col md={8}>
                                 <img className="projectImg" onClick={this.handleInfo} src={picture} alt="projectPic"/>

@@ -24,11 +24,17 @@
 .projectSubTitle {
   font-size: 16px;
 }
-.projects > .fab {
-  color: #dc7633;
-}
+
 .icons {
-  display: block;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.icons > i {
+  margin: 1rem;
+  color: #073c72;
 }
 .moreInfo {
+  display: block;
 }

@@ -12,7 +12,7 @@ export const portfolioData = [
   {
     id: 2,
     name: 'Portfolio Personnel',
-    subTitle : '',
+    subTitle : "Création de mon portfolio  ",
     languages: ['JavaScript','React','CSS'],
     languagesIcons: ['fab fa-js','fab fa-react','fab fa-css3-alt'],
     source: 'https://github.com/AntoineMra/portfolio',

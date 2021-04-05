@@ -1,10 +1,12 @@
 import React from 'react';
+import '../styles/Contact/ContactPage.css'
+
 
 const contact = () => {
     return (
-        <div>
-            <h1>contact</h1>
-        </div>
+        <section>
+            <h1 className="contactTitle">Contact</h1> 
+        </section>
     );
 };
 

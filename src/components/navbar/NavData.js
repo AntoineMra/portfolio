@@ -21,9 +21,9 @@ const menuItem = [
     },
     {
         id:4,
-        title: 'Blog',
-        icon: 'fas fa-book',
-        url: '/blog'
+        title: 'Contact',
+        icon: 'fas fa-envelope-open-text',
+        url: '/contact'
     },
 ]
 export default menuItem
