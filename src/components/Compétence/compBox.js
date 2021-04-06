@@ -7,14 +7,14 @@ const compBox = (props) => {
     return(
     props.array.map(item => {
         return (           
-            <>
+            <React.Fragment key={item.id}>
                 <Col md={{ span: 6}}>
-                    <div className="compRow" key={item.id}>
+                    <div className="compRow">
                         <i className="far fa-check-circle fa-lg"></i>
                         <label className="compItem">{item.name}</label>
                     </div>
                 </Col>
-            </>
+            </React.Fragment>
         );
     })
     )

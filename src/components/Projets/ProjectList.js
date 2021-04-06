@@ -55,9 +55,7 @@ export default class ProjectList extends Component {
                         )
                         })
                     }
-                    
                 </Row>
-                    
             </Container>
         )
     }

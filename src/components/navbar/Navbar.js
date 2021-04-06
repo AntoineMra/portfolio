@@ -11,8 +11,8 @@ const Items = function(){
         NavItems.map((items,index) => 
             {
                 return(
-                    <NavLink exact to={items.url}  activeClassName="navActive">
-                        <li key={index}>
+                    <NavLink key={index} exact to={items.url}  activeClassName="navActive">
+                        <li>
                             <i className={items.icon}></i>
                             <span className="navItem nav-links">{items.title}</span>
                         </li>
