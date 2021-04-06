@@ -11,15 +11,15 @@ const Footer = () => {
                     <h5 className="devlo">Développé par Antoine Marionneau</h5>
                     </Col>
                     <Col>
-                    <ul class="footerIcons">
-                        <li class="socialIcons">
+                    <ul className="footerIcons">
+                        <li className="socialIcons">
                             <a href="https://github.com/AntoineMra" target="_blank" rel="noreferrer" style={{color: '#ddd'}}>
-                                <i class="fab fa-github fa-2x"></i>
+                                <i className="fab fa-github fa-2x"></i>
                             </a>
                         </li>
-                        <li class="socialIcons">
+                        <li className="socialIcons">
                             <a href="https://www.linkedin.com/in/antoine-marionneau/" target="_blank" rel="noreferrer" style={{color: '#ddd'}}>
-                                <i class="fab fa-linkedin-in fa-2x">
+                                <i className="fab fa-linkedin-in fa-2x">
                                 </i>
                             </a>
                         </li>

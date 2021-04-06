@@ -36,7 +36,7 @@ export default class ProjectList extends Component {
                 <ul className="radioDisplay">
                     {this.radLang.map(rad =>{
                         return (
-                            <li className="radioLang">
+                            <li className="radioLang" key={rad.id}>
                                 <label className="radLabel" htmlFor={rad.id}> {rad.name} </label>
                                 <input  className="radInput" type="radio" name={rad.name} id={rad.id}/>
                             </li>
