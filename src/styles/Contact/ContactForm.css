@@ -1,0 +1,79 @@
+.contactForm {
+  color: #073c72;
+  margin: 3rem;
+  max-width: 80%;
+  border: 1px solid orange;
+  background: #073c7233;
+  padding: 2rem;
+}
+.inputForm {
+  background-color: #ffffff;
+  border: 1px solid #606060;
+  border-radius: 5px;
+  height: 3.5rem;
+  width: 80%;
+}
+.inputForm::placeholder {
+  color: #073c72;
+  padding-left: 0.5rem;
+}
+.inputform: {
+  color: red;
+  padding-left: 0.5rem;
+}
+
+.labelForm {
+  width: 20%;
+  padding-right: 1rem;
+}
+
+.formTitle {
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #606060;
+  border-radius: 5px;
+  width: 80%;
+  height: 7rem;
+  border-color: #333;
+}
+
+.formRow {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#not-mail {
+  display: none;
+}
+.subButton {
+  border-radius: 5px;
+  width: 40%;
+  height: 40px;
+  background-color: #dc7633;
+  border: 1px solid #ddd;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-left: 30%;
+}
+.subButton:hover {
+  background-color: #fff;
+  border: 1px solid #dc7633;
+  color: #dc7633;
+}
+@media screen and (max-width: 640px) {
+  .contactForm {
+    margin: 0rem;
+    max-width: 110%;
+    padding: 1rem;
+  }
+}
