@@ -5,7 +5,7 @@ import { Col, Container, Row , Button} from "react-bootstrap";
 export default class ProjectItem extends Component {
 
     state = { showInfo: false}
-    handleInfo= () => {
+    handleInfo= () => { 
         this.setState({
             showInfo: !this.state.showInfo
         })
@@ -14,7 +14,7 @@ export default class ProjectItem extends Component {
 
     render() {
         
-        let {name,subTitle, languagesIcons,source,info,picture} = this.props.item
+        let {name,subTitle, languagesIcons,source,link,info,picture} = this.props.item
 
         return (
                 <div className="projects">
@@ -29,7 +29,9 @@ export default class ProjectItem extends Component {
                                 <Button variant="dark" className="btnMore" onClick={this.handleInfo}> En savoir + </Button>
                             </Col>
                             <Col md={8}>
-                                <img className="projectImg" onClick={this.handleInfo} src={picture} alt="projectPic"/>
+                                <a href={link} target="_blank" rel="noreferrer">
+                                    <img className="projectImg" src={picture} alt="projectPic"/>
+                                </a>
                             </Col>
                         </Row>
                         
