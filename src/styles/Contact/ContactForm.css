@@ -2,7 +2,7 @@
   color: #073c72;
   margin: 3rem;
   max-width: 80%;
-  border: 1px solid orange;
+  border: 1px solid #dc7633;
   background: #073c7233;
   padding: 2rem;
 }
@@ -17,8 +17,8 @@
   color: #073c72;
   padding-left: 0.5rem;
 }
-.inputform: {
-  color: red;
+.formError {
+  color: #dc7633;
   padding-left: 0.5rem;
 }
 

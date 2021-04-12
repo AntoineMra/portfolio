@@ -33,11 +33,11 @@ const Navbar = () => {
         <nav className="NavbarItems">
             <Container>
                 <Row>
-                    <Col xs={5}>
+                    <Col md={5}>
                     <NavLink exact to="/"><h1 className="navbarTitle"> ANTOINE MARIONNEAU</h1></NavLink>
                     
                     </Col>
-                    <Col xs={{span:6 , offset: 1}}>
+                    <Col md={{span:6 , offset: 1}}>
                         <div className={clicked ? 'mobileMenuDeployed' : 'mobileMenu'} onClick={handleClickMobile}>
                             <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                         </div>

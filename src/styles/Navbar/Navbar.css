@@ -75,110 +75,24 @@ a:hover {
   display: none;
 }
 
-/* ------ Tablette CSS  ------------ */
-/*
-@media screen and (min-width: 520px) and (max-width: 760px) {
-  .navListWeb {
-    display: none;
-  }
-  .mobileMenu {
-    display: block;
-    color: #ddd;
-    margin-left: 33%;
-  }
-  .mobileMenuDeployed {
-    display: block;
-    color: #ddd;
-  }
-  .NavbarItems li {
-    width: auto;
-    padding: 5px;
-    transition: none;
-  }
-  .NavbarItems li:hover {
-    border-radius: 0%;
-    transform: none;
-    color: #ddd;
-    background-color: transparent;
-    transition: none;
-  }
-  .navbarMenu {
-    background-color: #073d72;
-    margin-top: 120%;
-    width: 40%;
-  }
-
-  .navListMobile {
-    padding: 0px;
-    opacity: 1;
-    list-style: none;
-    font-size: 18px;
-    margin-right: 20px;
-    transition: all 0.5s ease;
-  }
-  .navListMobile.active {
-    background-color: burlywood;
-    left: 0;
-    opacity: 1;
-    transition: 0.5s ease;
-    z-index: 1;
-  }
-  .navItem {
-    text-align: center;
-    padding: 10px;
-    padding-right: 50px;
-    display: block;
-    width: 100%;
-  }
-  .navbarTitle {
-    color: #ddd;
-    text-align: left;
-    font-size: 25px;
-    margin-top: 10px;
-    margin-right: 0px;
-    margin-left: 15px;
-  }
-  .NavbarItems {
-    height: 120px;
-    position: relative;
-  }
-  .navIcon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 15px;
-    cursor: pointer;
-  }
-}
-  */
 /* MOBILE CSS */
 
 @media screen and (max-width: 520px) {
-  .NavbarItems li {
-    width: auto;
-    padding: 5px;
-    transition: none;
-  }
   .navListWeb {
     display: none;
   }
   .mobileMenu {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ddd;
-    margin-left: 25%;
-    width: 50%;
+    margin-bottom: 1rem;
   }
   .mobileMenuDeployed {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ddd;
-    margin-right: -33%;
-  }
-  .navbarMenu {
-    background-color: #073d72;
-    margin-top: 120%;
-    width: 60%;
   }
 
   .navListMobile {
@@ -189,29 +103,16 @@ a:hover {
     margin-right: 20px;
     transition: all 0.5s ease;
   }
-  .navListMobile.active {
-    background-color: burlywood;
-    left: 0;
-    opacity: 1;
-    transition: 0.5s ease;
-    z-index: 1;
-  }
+
   .navItem {
-    text-align: center;
-    padding: 10px;
-    display: block;
-    width: 100%;
+    padding-left: 1rem;
   }
   .navbarTitle {
     color: #ddd;
-    text-align: left;
-    font-size: 25px;
-    margin-top: 10px;
-    margin-right: 0px;
-    margin-left: 15px;
+    text-align: center;
+    font-size: 2rem;
   }
   .NavbarItems {
-    height: 120px;
     position: relative;
   }
   .navIcon {

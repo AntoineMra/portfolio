@@ -10,10 +10,10 @@ const contact = () => {
             <h1 className="contactTitle">Contact</h1> 
             <Container>
                 <Row>
-                    <Col md={8}>
+                    <Col md={7}>
                         <ContactForm />
                     </Col>
-                    <Col md={4}>
+                    <Col md={5}>
                         <img className="contactIllus" src="./media/contactImg.svg" alt=" Contact illustration"/>
                     </Col>
                 </Row>

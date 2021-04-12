@@ -18,7 +18,7 @@ export const portfolioData = [
     languagesIcons: ['fab fa-js','fab fa-react','fab fa-css3-alt'],
     source: 'https://github.com/AntoineMra/portfolio',
     link: 'https://antoinemarionneau.com/',
-    info: "J'ai développé ce portfolio pour mettre en pratique mes connaissances. Cette application m'a permis de découvrir toute les étapes de la création à la production. Je me suis familiarisé avec le webdesign notamment. Ce fut également l'occasion pour moi de mettre en pratique mon premier projet avec la librairie JS React que j'ai appris en autonomie. C'est aujourd'hui mon projet le plus abouti et constitue le reflet de mes compétences. ",
+    info: "J'ai développé ce portfolio pour mettre en pratique mes connaissances. Cette application m'a permis de découvrir toutes les étapes de la création à la production. Je me suis familiarisé avec le webdesign notamment. Ce fut également l'occasion pour moi de mettre en pratique mon premier projet avec la librairie JS React que j'ai apprise en autonomie. C'est aujourd'hui mon projet le plus abouti et il constitue le reflet de mes compétences. ",
     picture: './media/project2.PNG'
   },
   {
