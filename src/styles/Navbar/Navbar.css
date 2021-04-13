@@ -96,12 +96,10 @@ a:hover {
   }
 
   .navListMobile {
-    padding: 0px;
-    opacity: 1;
-    list-style: none;
-    font-size: 18px;
-    margin-right: 20px;
-    transition: all 0.5s ease;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
   }
 
   .navItem {
@@ -114,14 +112,5 @@ a:hover {
   }
   .NavbarItems {
     position: relative;
-  }
-  .navIcon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 15px;
-    cursor: pointer;
   }
 }
