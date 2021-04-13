@@ -6,10 +6,10 @@ const HomeDesc = () => {
         <section className="HomeDesc">
             <Container>
                 <Row>
-                    <Col xs={{span: 7 , offset: 1}}>
+                    <Col md={{span: 7 , offset: 1}}>
                         <h5 className="descTitle"> Qui suis-je ? </h5>
                         <p className="descTexte">
-                            Bonjour, j'ai commencé le développement il y a maintenant 2 ans et j'ai entamé un parcours professionnel pour atteindre mon objectif :<b style={{color: '#DC7633'}}> me spécialiser dans le Web</b>. 
+                            J'ai commencé le développement il y a maintenant 2 ans et j'ai entamé un parcours professionnel pour atteindre mon objectif :<b style={{color: '#DC7633'}}> me spécialiser dans le Web</b>. 
                             <br/><br/>
                             Je me suis tourné vers les études d'informatique et particulièrement le développement en 2019. Je n'ai pas eu besoin de beaucoup de temps pour comprendre que je pourrais faire de cette passion <b style={{color: '#DC7633'}}>mon métier</b>. 
                             <br/><br/>
@@ -18,7 +18,7 @@ const HomeDesc = () => {
                             Je suis également à la recherche d'une alternance dans le développement web pour la suite de mon parcours alors<b style={{color: '#DC7633'}}> n'hésitez pas à me contacter</b>.
                         </p>
                     </Col>
-                    <Col xs={{span:3 , offset: 1}}>
+                    <Col md={{span:3 , offset: 1}}>
                         <img src="./media/pdp.jpg" alt="Profil Face" className="profilePhoto"/>
                     </Col>
                 </Row>

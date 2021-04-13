@@ -8,13 +8,13 @@ const HomeResume = () => {
         <section className="HomeResume">
             <Container>
                 <Row>
-                    <Col className="formationContainer">
+                    <Col md={6}>
                         <h1 className="formaHeading">
                             formation
                         </h1>
                         <HomeForma/>
                     </Col>
-                    <Col className="expContainer">
+                    <Col md={6}>
                         <h1 className="expHeading">
                             expérience
                         </h1>

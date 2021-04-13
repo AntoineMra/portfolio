@@ -23,10 +23,10 @@ const expData = [
 
 const HomeExp = () => {
     return(
-        expData.map((exp,index) => 
+        expData.map((exp) => 
             {
                 return(
-                    <Row className="expContainer" key={exp.id}>
+                    <div className="containerText" key={exp.id}>
                         <h3 className="expTitle">{exp.title}</h3>
                         <i className="expDate">{exp.date}</i>
                         <p className="expDesc">{exp.descMain}</p>
@@ -35,7 +35,7 @@ const HomeExp = () => {
                             <li className="expList">{exp.desc2}</li>
                             <li className="expList">{exp.desc3}</li>
                         </ul>                        
-                    </Row>
+                    </div>
                 )
             }
         ) 

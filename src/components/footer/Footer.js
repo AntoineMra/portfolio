@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="footerRow">
             <Container>
                 <Row>
-                    <Col>
+                    <Col md={5}>
                     <h5 className="devlo">Développé par Antoine Marionneau</h5>
                     </Col>
-                    <Col>
+                    <Col md={2}>
                     <ul className="footerIcons">
                         <li className="socialIcons">
                             <a href="https://github.com/AntoineMra" target="_blank" rel="noreferrer" style={{color: '#ddd'}}>
@@ -25,7 +25,7 @@ const Footer = () => {
                         </li>
                     </ul>
                     </Col>
-                    <Col>
+                    <Col md={5}>
                     <h5 className="copy">Antoine Marionneau | Tout droits réservés | 2021</h5>
                     </Col>
                 </Row>

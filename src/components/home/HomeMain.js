@@ -6,7 +6,7 @@ const HomeMain = () => {
         <section className="HomePage">
                 <Container>
                     <Row>
-                        <Col>
+                        <Col md={12}>
                             <h1 className="nameTitle">Antoine Marionneau</h1>
                             <h2 className="jobTitle">Développeur Web</h2>           
                         </Col>
