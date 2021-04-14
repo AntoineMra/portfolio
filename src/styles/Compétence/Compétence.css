@@ -18,3 +18,11 @@
   border-radius: 2%;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 520px) {
+  .compTitle {
+    font-size: 2.5rem;
+  }
+  .Box {
+    margin-bottom: 2rem;
+  }
+}

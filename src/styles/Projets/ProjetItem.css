@@ -91,3 +91,23 @@
   justify-content: space-around;
   font-style: italic;
 }
+@media screen and (max-width: 520px) {
+  .projects {
+    margin: 1rem;
+    padding: 0;
+  }
+  .projectImg {
+    margin: 1rem;
+    width: 95%;
+    height: auto;
+  }
+  .infoContent {
+    width: 50%;
+    top: 5%;
+    padding: 1rem;
+    margin: 0;
+  }
+  .head {
+    text-align: center;
+  }
+}

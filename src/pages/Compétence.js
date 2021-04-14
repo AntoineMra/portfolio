@@ -25,10 +25,10 @@ const Compétence = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={{ span: 7}} style={{margin: '50px 0px'}}>
+                    <Col md={{ span: 7}} style={{margin: '2rem 0px'}}>
                         <SecondaryBox type="autres compétences"/>
                     </Col>
-                    <Col md={{ span: 5}} style={{margin: '50px 0px'}}>
+                    <Col md={{ span: 5}} style={{margin: '2rem 0px'}}>
                         <SecondaryBox type="Centres d'intérêt"/>
                     </Col>
                 </Row>

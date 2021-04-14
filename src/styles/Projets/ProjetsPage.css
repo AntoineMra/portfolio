@@ -2,7 +2,7 @@
   min-height: 100vh;
 }
 .radioDisplay {
-  height: 5vh;
+  min-height: 5vh;
   background-color: #073c7233;
   border-radius: 25px;
   display: grid;
