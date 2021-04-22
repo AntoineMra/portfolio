@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import { Container, Row , Col} from 'react-bootstrap';
 
 const HomeDesc = () => {
@@ -13,13 +14,13 @@ const HomeDesc = () => {
                             <br/><br/>
                             Je me suis tourné vers les études d'informatique et particulièrement le développement en 2019. Je n'ai pas eu besoin de beaucoup de temps pour comprendre que je pourrais faire de cette passion <b style={{color: '#DC7633'}}>mon métier</b>. 
                             <br/><br/>
-                            Je suis maintenant étudiant en BTS SIO option SLAM. De plus, j'affectionne particulièrement découvrir de moi-même d'autres technologies pour compléter <br/> <b style={{color: '#DC7633'}}> mes compétences</b> . 
+                            Je suis maintenant étudiant en BTS SIO option SLAM. De plus, j'affectionne particulièrement découvrir de moi-même d'autres technologies pour compléter <br/> <NavLink exact to="/skills"> <b style={{color: '#DC7633'}}> mes compétences</b> </NavLink>. 
                             <br/><br/>
-                            Je suis également à la recherche d'une alternance dans le développement web pour la suite de mon parcours alors<b style={{color: '#DC7633'}}> n'hésitez pas à me contacter</b>.
+                            Je suis également à la recherche d'une alternance dans le développement web pour la suite de mon parcours alors <NavLink exact to="/contact"><b style={{color: '#DC7633'}}> n'hésitez pas à me contacter</b></NavLink>.
                         </p>
                     </Col>
                     <Col md={{span:3 , offset: 1}}>
-                        <img src="./media/pdp.jpg" alt="Profil Face" className="profilePhoto"/>
+                        <img src="./media/pdp.JPG" alt="Profil Face" className="profilePhoto"/>
                     </Col>
                 </Row>
                 <Row>

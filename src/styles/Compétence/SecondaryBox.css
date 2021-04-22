@@ -1,12 +1,19 @@
 .far {
   color: #dc7633;
+  margin-bottom: 15px;
 }
 .compRow {
   margin-left: 25px;
 }
 .compItem {
   margin-left: 15px;
+  font-weight: bold;
 }
-.compRow > .fas {
+.compRow .fas {
+  font-size: 21px;
+  margin-bottom: 12px;
   color: #dc7633;
+}
+.menuSubTitle {
+  margin-bottom: 1.5rem;
 }

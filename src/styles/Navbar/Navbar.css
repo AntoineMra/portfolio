@@ -60,7 +60,8 @@ a:hover {
   font-size: 18px;
   margin-top: 10px;
 }
-.fas {
+.navListWeb .fas {
+  display: inline;
   color: #ddd;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
@@ -74,6 +75,43 @@ a:hover {
 .mobileMenu {
   display: none;
 }
+
+/* BTS DROP DOWN   */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/*   */
 
 /* MOBILE CSS */
 

@@ -7,7 +7,7 @@ const centreBox = (props) => {
             <React.Fragment  key={item.id}>
                 <div className="compRow">
                     <i className={item.class}></i>
-                    <label className="compItem">{item.name}</label>
+                    <span className="compItem">{item.name}</span>
                 </div>
             </React.Fragment>
         );

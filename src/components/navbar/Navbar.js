@@ -10,16 +10,29 @@ const Items = function(){
     return(
         NavItems.map((items,index) => 
             {
-                return(
+                return( 
                     <NavLink key={index} exact to={items.url}  activeClassName="navActive">
+                        {items.isDrop ? ( 
+                        <li className="dropdown">
+                            <i className={items.icon}></i>
+                            <span className="navItem nav-links">{items.title}</span>
+                            <div className="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li> ) 
+                        : (                         
                         <li>
                             <i className={items.icon}></i>
                             <span className="navItem nav-links">{items.title}</span>
-                        </li>
+                        </li> )
+                        }
+
                     </NavLink>
                 )
             }
-        ) 
+        )
     )
 }
 

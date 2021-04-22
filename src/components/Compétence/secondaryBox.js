@@ -1,5 +1,6 @@
 import React from 'react';
 import CompBox from './compBox';
+import { Row } from 'react-bootstrap';
 import CentreBox from './centreBox';
 
 
@@ -29,7 +30,7 @@ const secondaryBox = (props) => {
         <>
             <div className="Box">
                 <h2 className="menuSubTitle">{props.type}</h2>
-            {isComp ? ( <CompBox array={array} />) : ( <CentreBox array={array}/> )}
+            {isComp ? ( <Row><CompBox array={array}/> </Row> ) : ( <CentreBox array={array}/> )}
             </div>
                        
         </>
