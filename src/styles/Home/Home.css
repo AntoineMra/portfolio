@@ -17,7 +17,7 @@
   background-position: center;
   background-size: cover;
   z-index: -1;
-  filter: brightness(40%);
+  filter: brightness(30%);
 }
 .HomeDesc {
   min-height: 100vh;
