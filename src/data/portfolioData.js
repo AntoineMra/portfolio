@@ -31,5 +31,15 @@ export const portfolioData = [
     link: 'http://durethortense.site/',
     info: "Portfolio crée en collaboration avec une étudiante en communication. Notre choix s'est porté sur une solution WordPress adaptable pour faire évoluer les compétences et les réalisations. L'idée du projet était de faire un complément du CV pour en faire un document plus graphique, plus moderne et plus dynamique.",
     picture: './media/project3.PNG'
+  },{
+    id: 4,
+    name: 'API - Localux',
+    subTitle : "Réalisation d'une API pour une application mobile de réservation de lcoation de véhicule.",
+    languages: ['JavaScript'],
+    languagesIcons: ['fab fa-js','fab fa-node-js'],
+    source: 'https://github.com/AntoineMra/localux',
+    link: 'https://github.com/AntoineMra/localux',
+    info: "J'ai réaliser une API avec Node.Js et Express pour la conception d'une application mobile de réservation de véhicule. J'ai implémenter le modèle à partir de l'ORM Sequelizer et d'une base de données SQL.",
+    picture: './media/project4.PNG'
   },
 ]
