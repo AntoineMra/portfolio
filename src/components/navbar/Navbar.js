@@ -11,25 +11,39 @@ const Items = function(){
         NavItems.map((items,index) => 
             {
                 return( 
-                    <NavLink key={index} exact to={items.url}  activeClassName="navActive">
-                        {items.isDrop ? ( 
-                        <li className="dropdown">
-                            <i className={items.icon}></i>
-                            <span className="navItem nav-links">{items.title}</span>
-                            <div className="dropdown-content">
-                                <NavLink exact to="/bts/projets">Projets Scolaires</NavLink>
-                                <NavLink exact to="/bts/veille">Veille Technologique</NavLink>
-                                <NavLink exact to="/bts/stage">Stage</NavLink>
-                            </div>
-                        </li> ) 
+                    <div key={index}>
+                        
+                        <li>
+                             {items.isDrop ? (
+                            <div>
+                                <div className="dropdown">
+                                    <NavLink exact to={items.url}  activeClassName="navActive">
+                                        <i className={items.icon}></i>
+                                        <span className="navItem nav-links">{items.title}</span>
+                                    </NavLink>
+                                    <div className="dropdown-content">
+                                        <NavLink exact to="/projetsScolaire">Projets Scolaires</NavLink>
+                                        <NavLink exact to="/veille">Veille Technologique</NavLink>
+                                        <NavLink exact to="/stage">Stage</NavLink>
+                                    </div>
+                                </div>
+                            </div>      
+                            
+                         ) 
                         : (                         
                         <li>
-                            <i className={items.icon}></i>
-                            <span className="navItem nav-links">{items.title}</span>
+                            <NavLink exact to={items.url}  activeClassName="navActive">
+                                <i className={items.icon}></i>
+                                <span className="navItem nav-links">{items.title}</span>
+                            </NavLink>
                         </li> )
                         }
-
-                    </NavLink>
+                        
+                        </li>
+                       
+                    </div>
+                    
+                    
                 )
             }
         )

@@ -8,11 +8,11 @@ import Compétence from './pages/Compétence'
 import Projets from './pages/Projets'
 import Bts from './pages/bts/Bts'
 import BtsStage from './pages/bts/BtsStage'
-import BtsProjets from './pages/bts/BtsProjets'
+import BtsProjets from '../src/pages/bts/BtsProjets'
 import BtsVeille from './pages/bts/BtsVeille'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
-import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer'
 
 
 
@@ -26,13 +26,13 @@ const App = () => {
           <Route path='/skills' component={Compétence}/>
           <Route path='/project' component={Projets}/>
           <Route path='/bts' component={Bts}/>
-          <Route path='/bts/projets' component={BtsProjets}/>
-          <Route path='/bts/veille' component={BtsVeille}/>
-          <Route path='/bts/stage' component={BtsStage}/>
+          <Route path='/projetsScolaire' component={BtsProjets}/>
+          <Route path='/veille' component={BtsVeille}/>
+          <Route path='/stage' component={BtsStage}/>
           <Route path='/contact' component={Contact}/>
           <Route component={NotFound}/>
         </Switch>
-      </BrowserRouter>
+      </BrowserRouter> 
       <Footer/>
     </>
   );

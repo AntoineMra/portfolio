@@ -1,0 +1,41 @@
+.btsTitle {
+  padding: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-shadow: 0 13.36px 8.896px #333, 0 -2px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btsDesc {
+  margin: 1rem 4rem;
+}
+.BoxBts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #073c7233;
+  border-radius: 2%;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  height: 300px;
+}
+.btsTitleDesc {
+  text-align: center;
+  width: 100%;
+}
+
+.e6Tab {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+/*
+ RESPONSIVE DESIGN
+*/
+@media screen and (max-width: 520px) {
+  .Box {
+    margin-bottom: 2rem;
+  }
+}
