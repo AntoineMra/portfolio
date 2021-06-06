@@ -1,0 +1,16 @@
+.blogTitle {
+  padding: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-shadow: 0 13.36px 8.896px #333, 0 -2px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.artSubTitle {
+  height: 2.2rem;
+  font-size: 12px;
+}
+.card-body {
+  min-height: 70vh;
+}
