@@ -1,0 +1,23 @@
+.btsTitle {
+  padding: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-shadow: 0 13.36px 8.896px #333, 0 -2px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.HomeDesc {
+  min-height: 100vh;
+  padding-top: 5%;
+  background-color: rgba(221, 221, 221, 0.4);
+}
+.stageUnderTitle {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+.stageTextDesc {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+}

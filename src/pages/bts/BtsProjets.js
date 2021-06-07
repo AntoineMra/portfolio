@@ -35,7 +35,7 @@ const BtsProjets = () => {
           <div className='projects' style={{ width: '100%' }}>
             <ProjetSco
               titre='Localux'
-              desc={`Réalisation d'une API pour une application mobile de réservation de location de véhicule. L'utilisateur la date de son trajet et choisi une véhicule pour effectuer sa location.`}
+              desc={`Réalisation d'une API pour une application mobile de réservation de location de véhicule. L'utilisateur choisi la date de son trajet et choisi une véhicule pour effectuer sa location.`}
               contexte="Localux est spécialisée dans la location de véhicules haut de gamme et de luxe, avec chauffeur. La société propose des courses sur Paris et sa périphérie avec des trajets prédéfinis (d’un lieu de départ à un lieu de destination) comme, par exemple, Paris-Versailles, Paris-Deauville, Paris-Fontainebleau, Paris-Chantilly. 
               L'entreprise a choisi de développer une application mobile pour effectuer ses réservations de véhicule avec chauffeur.
               "
