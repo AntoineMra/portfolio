@@ -7,11 +7,7 @@
   text-transform: uppercase;
   text-align: center;
 }
-.HomeDesc {
-  min-height: 100vh;
-  padding-top: 5%;
-  background-color: rgba(221, 221, 221, 0.4);
-}
+
 .stageUnderTitle {
   padding: 2.5rem 1.5rem;
   text-align: center;

@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .HomePage::before {
   content: '';
   position: absolute;
@@ -96,26 +97,29 @@
   padding-top: 5%;
   min-height: 80vh;
   width: 100%;
-  background-color: rgb(20, 19, 19);
-  color: #ddd;
 }
+
+
 .centered {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.formaHeading {
+.formaHeading,.expHeading {
   height: 50px;
   text-transform: uppercase;
   text-align: center;
-}
-.expHeading {
-  height: 50px;
-  text-transform: uppercase;
-  text-align: center;
+  font-weight: 700;
 }
 .containerText {
-  margin: 5% 10%;
+  padding: 5% 10%;
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.08);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .formaTitle {
