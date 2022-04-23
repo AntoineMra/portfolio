@@ -30,26 +30,26 @@
   height: 408px;
   width: 306px;
   box-shadow: 0 0 0 4px #073c72;
+  border-radius: 5px;
   align-items: center;
 }
 
 .cvFile {
   width: 20%;
   margin: 10% 40%;
-  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #073c72;
-  border: solid;
-  border-color: #073c72;
+  border: solid 2px #073c72;
+  border-radius: 10px;
+  transition: all 0.15s ease-in;
 }
 
 .cvFile:hover {
   background-color: #073c72;
   color: #ddd;
-  border: solid;
-  border-color: #ddd;
+  border: solid 2px transparent;
 }
 
 .nameTitle {
@@ -149,14 +149,42 @@
   .nameTitle {
     font-size: 3rem;
   }
+
+  .containerTitle {
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
   .cvFile {
     width: auto;
     margin: 10% 30%;
+    padding: 10px 15px;
     text-align: center;
   }
   .resumeImg {
     margin-bottom: 1rem;
     margin-left: 0%;
     width: 100%;
+  }
+
+  .profilePhoto {
+    margin-top: 10%;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .nameTitle {
+    font-size: 2.4rem;
+  }
+
+  .jobTitle {
+    font-size: 2rem;
   }
 }

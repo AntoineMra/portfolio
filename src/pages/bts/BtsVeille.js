@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import CardDeck from 'react-bootstrap/Card'
-import Cards from '../../components/Blog/Cards'
+import Cards from '../../components/BTS/Blog/Cards'
 import '../../styles/BTS/btsVeille.css'
 
 const BtsVeille = () => {

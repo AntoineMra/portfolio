@@ -10,6 +10,7 @@
   height: auto;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
   font-size: 15px;
 }
 .navbarTitle {
@@ -21,6 +22,14 @@
   color: #ddd;
   margin-top: 15px;
 }
+
+.navbarMenu{
+  height: 100%;
+  width: 100%;
+  padding-right: 50px;
+}
+
+
 .fa-bars {
   color: #ddd;
 }
@@ -52,11 +61,11 @@ a:hover {
   height: 50px;
 }
 .navListWeb {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
-  justify-content: end;
   font-size: 18px;
   margin-top: 10px;
 }
