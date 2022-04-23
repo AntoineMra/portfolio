@@ -20,7 +20,6 @@
   filter: brightness(30%);
 }
 .HomeDesc {
-  min-height: 100vh;
   padding-top: 5%;
   background-color: rgba(221, 221, 221, 0.4);
 }
@@ -36,10 +35,11 @@
 
 .cvFile {
   width: 20%;
-  margin: 10% 40%;
+  margin: 50px 40%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 25px;
   color: #073c72;
   border: solid 2px #073c72;
   border-radius: 10px;
