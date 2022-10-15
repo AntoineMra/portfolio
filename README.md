@@ -1,6 +1,6 @@
 # The first version of my Portfolio | Antoine Marionneau
 
-This is the first version of my Portfolio. This is also the practical project that I made with React. 
+This is the first version of my Portfolio. This is also the first practical project that I made with React. 
 Dated from 03/2021
 
 ## CRA SETUP
